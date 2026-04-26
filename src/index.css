@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: linear-gradient(to right, #3b82f6, #4f46e5);
+  color: white;
+  padding: 25px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-content {
+  width: 80%;
+  max-width: 900px;
+  margin: 40px auto;
+  flex: 1;
+}
+
+.blog-post,
+.contact-page {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h2,
+.contact-page h2 {
+  margin-bottom: 15px;
+}
+
+.blog-post p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.post-info {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.read-more-btn,
+.comment-form button,
+.contact-form button {
+  display: inline-block;
+  background-color: #facc15;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.comment-form,
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.comment-form input,
+.comment-form textarea,
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.comment-form textarea,
+.contact-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.comment-item {
+  background-color: #f9f9f9;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.footer {
+  background-color: #111827;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.not-found {
+  text-align: center;
+  margin: 40px 0;
+}
